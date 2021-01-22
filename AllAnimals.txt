@@ -2,20 +2,20 @@ AllAnimals.txt for Group 7
 Mammals Text
 1.
 2.
-3.
+3.rabbit
 4.
 Reptiles
 1.
 2.
-3.
+3.frog
 4.
 Fish
 1.
 2.
-3.
+3.crappie
 4.
 Birds
 1.
 2.
-3.
+3.quail
 4.
