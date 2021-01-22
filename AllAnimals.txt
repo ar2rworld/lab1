@@ -3,19 +3,19 @@ Mammals Text
 1.Elephant
 2.
 3.
-4.
+4.Hippo
 Reptiles
 1.Dragon
 2.
 3.
-4.
+4.Bearded Dragon
 Fish
 1.Pike
 2.
 3.
-4.
+4.Salmon
 Birds
 1.Phoenix
 2.
 3.
-4.
+4.Quail
