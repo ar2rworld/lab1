@@ -1,21 +1,21 @@
 AllAnimals.txt for Group 7
 Mammals Text
-1.
+1.Elephant
 2.
 3.
 4.
 Reptiles
-1.
+1.Dragon
 2.
 3.
 4.
 Fish
-1.
+1.Pike
 2.
 3.
 4.
 Birds
-1.
+1.Phoenix
 2.
 3.
 4.
