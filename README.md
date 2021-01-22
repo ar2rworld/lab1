@@ -1,2 +1,2 @@
 # lab1
-#cosc224
+cosc224
