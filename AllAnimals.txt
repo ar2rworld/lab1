@@ -1,0 +1,21 @@
+AllAnimals.txt for Group 7
+Mammals Text
+1.
+2.
+3.
+4.
+Reptiles
+1.
+2.
+3.
+4.
+Fish
+1.
+2.
+3.
+4.
+Birds
+1.
+2.
+3.
+4.
