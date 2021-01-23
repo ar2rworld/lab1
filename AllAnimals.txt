@@ -1,21 +1,21 @@
 AllAnimals.txt for Group 7
 Mammals Text
 1.Elephant is Artur's fav mammal
-2.
+2.Dog
 3.rabbit
 4.cat
 Reptiles
 1.Dragon is the best reptile by Artur's opinion
-2.
+2.Iguana
 3.frog
 4.bearded dragon
 Fish
 1.Pike, because Artur loves fishing
-2.
+2.Bass
 3.crappie
 4.salmon
 Birds
 1.Phoenix, as there is a hero in Dota2 with the same name
-2.
+2.Bald Eagle
 3.quail
 4.Quail
