@@ -2,20 +2,20 @@ AllAnimals.txt for Group 7
 Mammals Text
 1.Elephant is Artur's fav mammal
 2.Dog (Ryan Utigard)
-3.rabbit
+3.rabbit (Lukas)
 4.cat	(Tristen)
 Reptiles
 1.Dragon is the best reptile by Artur's opinion
 2.Iguana (Ryan Utigard)
-3.frog
+3.frog (Lukas)
 4.bearded dragon (Tristen)
 Fish
 1.Pike, because Artur loves fishing
 2.Bass (Ryan Utigard)
-3.crappie
+3.crappie (Lukas)
 4.salmon (Tristen)
 Birds
 1.Phoenix, as there is a hero in Dota2 with the same name(Artur plays this)
 2.Bald Eagle (Ryan Utigard)
-3.quail
+3.quail (Lukas)
 4.Quail (Tristen)
