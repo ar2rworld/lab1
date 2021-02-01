@@ -1,6 +1,6 @@
 AllAnimals.txt for Group 7
 Mammals Text
-1.Elephant is Artur's fav mammal
+1.Fox is Artur's fav mammal
 2.Dog (Ryan Utigard)
 3.rabbit (Lukas)
 4.cat	(Tristen)
