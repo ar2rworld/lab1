@@ -5,7 +5,7 @@ echo $text;
 
 $path = './'; 
 $file = $path.uniqid().".png"; 
- $ecc stores error correction capability('L') 
+//$ecc stores error correction capability('L') 
 $ecc = 'L'; 
 $pixel_Size = 10; 
 $frame_Size = 10; 
