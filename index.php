@@ -1,4 +1,5 @@
 <?php
+include 'phpqrcode/qrlib.php'; 
 $text = basename($_SERVER['PHP_SELF']); 
 $path = './'; 
 $file = $path.uniqid().".png"; 
