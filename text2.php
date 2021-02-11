@@ -1,29 +1,24 @@
+
 <?php
 include('init.php');
-$txt = $_GET['url'];
-
-// ! TODO
-if (!isset($_GET['url'])) {
-   $txt = 'google.ca';
-}
+$txt         = $_GET['u'] ?? 'https://www.google.ca/search&q=error+message';
+$pixel_size  = $_GET['p'] ?? 15;	// General QR-Code size
+$frame_size  = $_GET['f'] ?? 4;		// Buffer around the image of whitespace
 
 // Setting the conditionals (ECC, SIZE, ETC...)
-$path = './';
-$file = $path.uniqid().".jpg";
+$file        = $path.uniqid().".jpg";	// Assign unique ID to each query for filename
+$ecc         = 'QR_ECLEVEL_L';		// QR code Error Correction strength. Higher = more resilient but larger
+$tempDir     = "./images/";		// Image storage location
 
-$ecc = 'L';
-$pixel_Size = 10;
-$frame_Size = 10;
+// Outputs image directly into browser, as PNG stream
+QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
 
-$tempDir = "./images/";
-// outputs image directly into browser, as PNG stream
-//QRcode::png($txt, $file, $ecc, $pixel_Size, $frame_Size);
-QRcode::png($txt, $tempDir.'007_5.png', QR_ECLEVEL_L, 20, 4);
-echo '<img src="'.$tempDir.'007_5.png" />';
+// Redirect to the newly created file
+header('Location: '.$tempDir.$file);
 
+exit;
 
+// SCHEMA
+// tristendvernychuk.ca/dina/{filename}.php? u=google.ca & p=15 & f=2
 
-
-
-// This is the scheme for the URL GET requests below...
-// tristendvernychuk.ca/dina/qr.php?url=...
+?>
