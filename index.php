@@ -5,13 +5,13 @@ echo $text;
 
 $path = './'; 
 $file = $path.uniqid().".png";
-echo $file;
+//echo $file;
 //$ecc stores error correction capability('L') 
 $ecc = 'L'; 
 $pixel_Size = 10; 
 $frame_Size = 10; 
 // Generates QR Code and Stores it in directory given 
-QRcode::png($text, $file, $ecc, $pixel_Size, $frame_size); 
+//QRcode::png($text, $file, $ecc, $pixel_Size, $frame_size); 
   
 // Displaying the stored QR code from directory 
 echo "<center><img src='".$file."'></center>"; 
