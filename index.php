@@ -4,7 +4,8 @@ $text = 'https://tristendvernychuk.ca/dina/' . basename($_SERVER['PHP_SELF']);//
 echo $text;
 
 $path = './'; 
-$file = $path.uniqid().".png"; 
+$file = $path.uniqid().".png";
+echo $file;
 //$ecc stores error correction capability('L') 
 $ecc = 'L'; 
 $pixel_Size = 10; 
