@@ -20,19 +20,19 @@ $ecc         = 'QR_ECLEVEL_L';			// QR code Error Correction strength. Higher = 
 $tempDir     = "./images/";			// Image storage location
 
 switch($format) {
-	case "png";
+	case "png":
 		QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
         	header('Location: '.$tempDir.$file);
         	break;
-	case "svg";				// Takes funkier parameters to get this working...alot of ways it can go wrong
-		$svgCode QRcode::svg($svg, $tempDir.$file, $saveToFile, $ecc, $imageWidth);
+	case "svg":				// Takes funkier parameters to get this working...alot of ways it can go wrong
+		$svgCode = QRcode::svg($svg, $tempDir.$file, $saveToFile, $ecc, $imageWidth);
 		echo $svgCode;
 		break;
-	case "jpg";				// Using the PNG function to save as JPG works I guess? A bit redundant
+	case "jpg":				// Using the PNG function to save as JPG works I guess? A bit redundant
 		QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
         	header('Location: '.$tempDir.$file);
         	break;
-	case "txt";
+	case "txt":
 		QRcode::txt($txt);		// No parameters required for raw output
     		echo '<pre>';			// Display the contents just in the page, can't really save to file anyways
     		echo join("\n", $txt);
