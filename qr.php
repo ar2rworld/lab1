@@ -41,10 +41,10 @@ if (scandir($folder).in_array($file)) {     // Check file hash against already g
             header('Location: '.$tempDir.$file);
             break;
         case "text":
-            QRcode::text($txt);	// No parameters required for raw output
-	    	break;
-		default:
-			QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
+            QRcode::text($txt);             // No parameters required for raw output
+            break;
+        default:
+            QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
             header('Location: '.$tempDir.$file);
             break;
     }
