@@ -8,8 +8,8 @@
 // Include scripts manually since apache pretends it doesn't exist otherwise
 	require('/usr/share/phpqrcode/qrlib.php');
 // TEXT / SVG Generation Libraries
-	require('/usr/share/phpqrcode/qrmask.php');
-	require('/usr/share/phpqrcode/qrspec.php');
+//	require('/usr/share/phpqrcode/qrmask.php');
+//	require('/usr/share/phpqrcode/qrspec.php');
 
 // General headers sent with responses, CloudFlare mostly takes care of them
 	header('Expires: Sun, 01 Jan 2014 00:00:00 GMT');

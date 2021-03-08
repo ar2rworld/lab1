@@ -13,7 +13,7 @@ $saveToFile  = $_GET['save'] ??  true;      // SVG only, whether to output strea
 
 //---------------------------------------------------------------------------------------------------------------------------------
 
-$file = "qr_".md5($url.$pixel_size.$frame_size).".";
+$file = "qr_".md5($txt.$pixel_size.$frame_size).".";
 if (in_array($format, array("jpg", "jpeg", "png", "svg", "txt"))) {
     $file = $file.$format;                  // Assign unique ID filename IF nothing is specified
 } else {
@@ -40,8 +40,8 @@ if (scandir($folder).in_array($file)) {     // Check file hash against already g
             QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
             header('Location: '.$tempDir.$file);
             break;
-        case "text":
-            QRcode::text($txt);             // No parameters required for raw output
+        case "txt":
+            QRcode::text($txt, $tempDir.$file);             // No parameters required for raw output
             break;
         default:
             QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
