@@ -42,6 +42,7 @@ if (in_array($file, scandir($tempDir))) {     // Check file hash against already
             break;
         case "txt":
             QRcode::text($txt, $tempDir.$file);             // No parameters required for raw output
+    	    header('Location: '.$tempDir.$file);
             break;
         default:
             QRcode::png($txt, $tempDir.$file, $ecc, $pixel_size, $frame_size);
