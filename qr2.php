@@ -23,7 +23,7 @@ if (in_array($format, array("jpg", "jpeg", "png", "svg", "txt"))) {
 $ecc         = 'QR_ECLEVEL_L';              // QR code Error Correction strength. Higher = more resilient but larger
 $tempDir     = "./images/";                 // Image storage location
 
-if (in_array(scandir($tempDir), $file)) {     // Check file hash against already generated images
+if (in_array($file, scandir($tempDir))) {     // Check file hash against already generated images
     header('Location: '.$tempDir.$file);
 } else {
     switch($format) {
