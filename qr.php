@@ -14,7 +14,7 @@ $saveToFile  = $_GET['save'] ??  true;          // SVG only, whether to output s
 //---------------------------------------------------------------------------------------------------------------------------------
 
 $fileName = "qr_".md5($txt.$pixel_size.$frame_size).".";
-if (in_array($format, array("jpg", "jpeg", "png", "svg", "txt"))) {
+if (in_array($format, array("jpg", "jpeg", "png", "txt"))) {
     $fileName = $fileName.$format;              // Assign unique ID filename IF nothing is specified
 } else {
     $fileName = $fileName."jpg";                // Save as JPEG if the format is malformed
@@ -31,11 +31,11 @@ if (in_array($fileName, scandir($tempDir))) {   // PRE-Generation -> Check if ob
             QRcode::png($txt, $tempDir.$fileName, $ecc, $pixel_size, $frame_size);
             header('Location: '.$tempDir.$fileName);
             break;
-        case "svg":                             // Takes funkier parameters to get this working...alot of ways it can go wrong
-            $svgCode = QRcode::svg($svg, $tempDir.$fileName, $saveToFile, $ecc, $imageWidth);
-            // echo $svgCode;
-            header('Location: '.$tempDir.$fileName);
-            break;
+//        case "svg":                             // Takes funkier parameters to get this working...alot of ways it can go wrong
+//            $svgCode = QRcode::svg($svg, $tempDir.$fileName, $saveToFile, $ecc, $imageWidth);
+//            // echo $svgCode;
+//            header('Location: '.$tempDir.$fileName);
+//            break;
         case "jpg":
         case "jpeg":                            // Using the PNG function to save as JPG works I guess? A bit redundant
             QRcode::png($txt, $tempDir.$fileName, $ecc, $pixel_size, $frame_size);

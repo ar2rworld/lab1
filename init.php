@@ -7,6 +7,7 @@
 
 // Include scripts manually since apache pretends it doesn't exist otherwise
 	require('/usr/share/phpqrcode/qrlib.php');
+	//require(/home/tristen/git-stuff/phpqrcode/phpqrcode.php);
 // TEXT / SVG Generation Libraries
 //	require('/usr/share/phpqrcode/qrmask.php');
 //	require('/usr/share/phpqrcode/qrspec.php');
