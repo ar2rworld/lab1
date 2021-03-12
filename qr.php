@@ -24,7 +24,7 @@ $ecc         = 'QR_ECLEVEL_L';                  // QR code Error Correction stre
 $tempDir     = "./images/";                     // Image storage location
 
 if (in_array($fileName, scandir($tempDir))) {   // PRE-Generation -> Check if object w/ MD5 hash already exists on disk, re-direct
-    header('Location: '.$tempDir.$file);
+    header('Location: '.$tempDir.$fileName);
 } else {
     switch($format) {
         case "png":
