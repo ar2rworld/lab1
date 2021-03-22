@@ -1,0 +1,28 @@
+<img alt='QRcode image is loading' id='id1'>
+<script>
+    //var xml = new 
+    /*let xhr = new XMLHttpRequest();
+    console.log(document.url);
+    xhr.open('GET', 'https://tristendvernychuk.ca/dina/qr.php?url=' + "123.com&fo=txt");
+    xhr.send();
+    xhr.onload = function() {
+        var img = document.createElement('img');
+        img.src=xhr.response;
+        alert(xhr.response);
+        document.getElementById('t').innerHTML=xhr.response;
+        document.getElementById('qr').appendChild(img);
+    };*/
+    
+    /*var img = document.createElement('img');
+    img.alt='QR code for this page';
+    img.src="https://tristendvernychuk.ca/dina/qr.php?url=" + document.URL+ '&ps=4';
+    document.getElementById('qr').appendChild(img);*/
+    
+    var _img = document.getElementById('id1');
+    var newImg = new Image;
+    newImg.src = "https://tristendvernychuk.ca/dina/qr.php?url=" + document.URL+ '&ps=4';
+    newImg.onload = function() {
+        _img.src = this.src;
+    }
+
+</script>
